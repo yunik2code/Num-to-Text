@@ -1,8 +1,10 @@
 ones = ['Zero','One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine']
 one_tens = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen','Twenty']
 tens = ['Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety']
-number=int(input('Enter a number'))
-if number<=9:
+number=int(float(input('Enter a number')))
+if number<0:
+  print('Number can`t be negative')
+elif number<=9:
   print(ones[number])
   
   
